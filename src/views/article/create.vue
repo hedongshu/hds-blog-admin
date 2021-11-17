@@ -87,7 +87,7 @@ export default {
             ruleForm: {
                 title: '',
                 description: '',
-                img_url: 'https://cdn.boblog.com/Fpt_XGdF6ckcH4af7RjuKcahLPGJ',
+                img_url: 'http://cdn.7hds.com/FrYrxKySXRGhSA51HlV1Qkk5Mzp4',
                 seo_keyword: '',
                 status: 1,
                 sort_order: 1,
@@ -143,7 +143,7 @@ export default {
         },
         // 上传图片成功回调
         handleUploadSuccess(file) {
-            this.ruleForm.img_url = `https://cdn.boblog.com/${file.key}`
+            this.ruleForm.img_url = `http://cdn.7hds.com/${file.key}`
             this.$message.success('上传成功!')
         },
         // 编辑器删除图片回调
@@ -169,7 +169,7 @@ export default {
                 data: formdata,
                 headers: { 'Content-Type': 'multipart/form-data' }
             }).then((res) => {
-                const img_url = `https://cdn.boblog.com/${res.data.key}`
+                const img_url = `http://cdn.7hds.com/${res.data.key}`
                 this.$refs.md.$img2Url(pos, img_url)
                 loading.close()
             }).catch(err => {
