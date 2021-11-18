@@ -87,7 +87,7 @@ export default {
             ruleForm: {
                 title: '',
                 description: '',
-                img_url: 'http://cdn.7hds.com/FrYrxKySXRGhSA51HlV1Qkk5Mzp4',
+                img_url: '',
                 seo_keyword: '',
                 status: 1,
                 sort_order: 1,
@@ -101,7 +101,7 @@ export default {
                     { required: true, message: '请输入文章描述', trigger: 'blur' }
                 ],
                 img_url: [
-                    { required: true, message: '请输入图片链接', trigger: 'blur' }
+                    { required: false, message: '请输入图片链接', trigger: 'blur' }
                 ],
                 seo_keyword: [
                     { required: true, message: '请输入 SEO 关键字', trigger: 'blur' }
