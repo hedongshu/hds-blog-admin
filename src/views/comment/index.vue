@@ -62,7 +62,9 @@
                     </template>
                 </el-table-column>
                 <el-table-column label="评论人信息" align="center">
-                    <template slot-scope="scope">{{ scope.row.user_info || "匿名" }}</template>
+                    <template
+                        slot-scope="scope"
+                    >{{ (scope.row.user_info && scope.row.user_info.username) || "匿名" }}</template>
                 </el-table-column>
                 <el-table-column label="评论人邮箱" align="center">
                     <template slot-scope="scope">{{ scope.row.email || "未提供" }}</template>
